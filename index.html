@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>Flutter CS152</title>
+    <meta name="description" content="Flutter Presentation CS152">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="index.html" title="Sudoku">Sudoku</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/HappyHackingOrange/Sudoku" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>Sudoku</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+         <span class="background" style="background-image:url('https://cdn-images-1.medium.com/max/1588/1*SvPdopks3nZ3LHmt51r1eg.jpeg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap alignleft">
+            <h1><strong>Flutter</strong></h1>
+            <p class="text-intro">
+              Chaz Chang<br>Randell Ricasata<br>Nelson Nguyen<br>Vincent Stowbunenko
+            </p>
+            <p>
+              <a href="https://github.com/HappyHackingOrange/Sudoku" class="button zoomIn" title="Link to project repo">
+                <svg class="fa-cloud-download">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+                Sudoku
+              </a>
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>Flutter & Dart</strong></h2>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>What is Flutter?</h2>
+                  <p>
+                    Flutter is Google’s mobile app SDK for crafting high-quality native interfaces on iOS and Android in record time.
+                    Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.
+                  </p>
+                  <li>
+                    <h2>What is Dart?</h2>
+                    <p>
+                      Dart is a class-based, single-inheritance, pure object-oriented programming language. Dart is optionally typed and supports reiﬁed generics and interfaces.
+                      Dart programs may be statically checked. The static checker will report some violations of the type rules, but such violations do not abort compilation or preclude execution.
+                    </p>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <h2>Why Dart?</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Developer productivity
+                  </h2>
+                  Saves engineering resources by letting developers create apps for both iOS and Android with the same codebase. Using a highly productive language accelerates developers further and makes Flutter more attractive.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-link">
+                      <use xlink:href="#fa-link"></use>
+                    </svg>
+                    Object-orientation
+                  </h2>
+                  The industry uses object-oriented languages already, so it is natural to not reinvent the wheel.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-clock-o">
+                      <use xlink:href="#fa-clock-o"></use>
+                    </svg>
+                    Fast allocation
+                  </h2>
+                  functional-style flow that depends heavily on the underlying memory allocator efficiently handling small, short-lived allocations.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+		
+		  <section>
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <h2>Why Dart?</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Client-optimized language
+                    </h2>
+                  Dart started out being optimized for web apps, and is evolving to provide great support for mobile apps. Dart also runs on the command line and server-side.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Compatibility
+                  </h2>
+                  Many web apps are written in JavaScript because it is supported by a variety of web browsers. Dart is also meant for the web.
+                  However for most environments that do not support Dart, it can be easily compiled to JavaScript.
+                  </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Errors
+                  </h2>
+                  Dart is designed to be able to tackle problems and catch errors easier.  This is why Dart has async/await, generators, string interpolation, earlier error detection and much more.
+                  </div>
+              </li>
+</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>Other Dart Framework: Angular Dart</strong></h2>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2></h2>
+                  <p>
+                    If you want to develop desktop apps, AngularDart is recommended.
+                    </p>
+                  <li>
+                    <h2></h2>
+                    <p>
+                      Hundreds of Google engineers use it to build sophisticated, mission-critical apps that bring in much of Google's revenue.
+                      </p>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Hot Reload</strong></h3>
+                <p>To use hot reload: run a Flutter app, modify dart file, and click Hot Reload</p>
+                <p>State is maintained and combined with updated code</p>
+                <p>Helps with quickly experimenting with User Interfaces and fixing errors.
+                  Small changes take only a couple seconds.</p>
+                <p>"Hot reload works by injecting updated source code files into the running
+                  Dart Virtual Machine (VM). After the VM updates classes with the new versions of
+                  fields and functions, the Flutter framework automatically rebuilds the widget
+                  tree, allowing you to quickly view the effects of your changes." (flutter.io/hot-reload/)</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre><center><b> Live Demonstration Incoming...</b></center></pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Functional</strong></h3>
+                <p class="text-intro">Functions can be passed as arguments or assigned to variables</p>
+                <p>Functions can be declared using => notation</p>
+                <p>Anonymous functions supported</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>
+[1, 2, 3].map((x) => x*x)
+//[1, 4 , 9]
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Operator Overriding</strong></h3>
+                <p class="text-intro">Override operators of a Class (e.g. ==).</p>
+                <p> HashSet uses the == operator to search for elements instead of the .equals method</p>
+                <p> Override the == operator to use a HashSet with a custom Class </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>
+@override
+bool operator ==(other) {
+  return (this.r == other.r) && (this.c == other.c);
+}
+
+Cat operator +(Cat other) {
+  return new Kitten(dna + other.dna);
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Optional named parameters and default parameter values</strong></h3>
+                <p>To declare a function/constructor with optional named parameters, use <code>{param1, param2, ...}</code></p>
+                <p>To call a function/constructor with optional named parameters, use <code>paramName: value</code></p>
+                <p>To declare a function/constructor with default parameter values use <code>:</code> or <code>=</code></p>
+                <p>Widgets are easily customizable and easily used with few lines of code.
+                  Container constructor consists of 12 optional named parameters.
+                  To call the constructor, only write code for parameters you need customized and the rest of the parameters have default values.</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>
+<span class="code-comment">//Declaration of named constructor</span>
+TableBorder.all({
+  Color color: const Color(0xFF000000),
+  double width: 1.0,
+  BorderStyle style: BorderStyle.solid
+})
+
+<span class="code-comment">//Call</span>
+new TableBorder.all(
+  color: Colors.blueAccent
+)
+<span class="code-comment">//color is Colors.blueAccent, width is 1.0, style is BorderStyle.solid</span>
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>No Undefined</strong></h3>
+                <p class="text-intro">JavaScript interpreter returns undefined when accessing a variable or object property that is not yet initialized.
+                </p>
+                <p>Attempting to access uninitialzed values can generate undefined related errors, which is pretty common.  This have effect on code safety.  Dart omits this type of value to prevent those errors.</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <pre>
+let company;
+company;    // => undefined
+let person = { name: 'John Smith' };
+person.age; // => undefined
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+		<section>
+				  <!--.wrap = container (width: 90%) -->
+				  <span class="background" style="background-color:#99ccff"></span>
+				  <div class="wrap">
+					<div class="grid vertical-align">
+					  <div class="column">
+						<h3><strong>Future and Async</strong></h3>
+						<p>Even though Dart is single threaded, it could run the rest of the code without waiting for functions that do a lot of work</p>
+						<p>Dart uses an asynchronous model, and you can return values of functions that do a lot of work using a Future without having it finish.</p>
+						<p>Future is basically a place holder. It queues up the work of the function and then returns an uncompleted Future object.</p>
+						<p>When the function is done doing its job, the Future object then becomes complete with the returned value.</p>
+						<p>To get the value that Future represents, we use async.</p>
+						<p>Using await ensures that the statement completes before moving on. </p>
+					  </div>
+					  <!-- .end .column -->
+					  <div class="column">
+					    <pre>
+					<b>printDailyNewsDigest()</b> async {
+String news = await gatherNewsReports();print(news);
+}
+
+<b>main()</b> {
+printDailyNewsDigest();
+printWinningLotteryNumbers();
+printWeatherForecast();
+printBaseballScore();
+}
+<br>
+<b>Console Output:</b>
+Winning lotto numbers: [23, 63, 87, 26, 2]
+Tomorrow's forecast: 70F, sunny.
+Baseball score: Red Sox 10, Yankees 0
+gathered news goes here
+                </pre>
+					  </div>
+					  <!-- .end .column -->
+						  <div class="row">
+							<img src="async-await.png">
+							
+						  </div>
+					  </div>
+					</div>
+					<!-- .end .grid -->
+				  </div>
+				  <!-- .end .wrap -->
+				</section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>Flutter is about Widgets.</strong></h2>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2></h2>
+                  <p>
+                    User Interfaces in Flutter apps use Widgets as a building block.
+                    A widget can define a structure (e.g. button or menu), a style (e.g. font or color),
+                    a layout (e.g. center or padding), and etc.
+                  </p>
+                <li>
+                  <h2></h2>
+                  <p>
+                    Widgets form a hierarchy using composition. Widgets have multiple child Widgets
+                    that merge to make a customizable result. Layouts are very easy to make with Widgets.
+                  </p>
+                <li>
+                  <h2></h2>
+                  <p>
+                    Define a Widget by implementing build method that returns a tree of Widgets.
+                    Each of the Widgets recursively builds until the tree is complete.
+                  </p>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Layouts</strong></h3>
+                <p class="text-intro">Row, Column, Text, and Icon are all Widgets</p>
+					<img src="static/png/layout1.PNG">
+					<img src="static/png/layout2.PNG">
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Our Application</strong></h3>
+                <p class="text-intro">NyanDoku.</p>
+                <p>A spin on the classic Sudoku game. Instead of numbers, we use images of cats to keep the game interesting! Cells with grey backgrounds mean that those are given cells and are unchangeable. The bottom area of the screen is the "palette." Choose a cat and put it on the board! Game is complete with conflict detection.</p>
+              </div>
+              <!-- .end .column -->
+              <div class="column" width="350" height="600">
+                <video width="350" height="600" controls loop>
+  <source src="static/mp4/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="slide-bottom">
+          <span class="background" style="background-color:#99ccff"></span>
+          <div class="wrap">
+            <div class="content-right text-serif">
+              <h2>
+                <strong>Thank you!</strong>
+                <a target="_blank" title="Share on Twitter" href="https://github.com/HappyHackingOrange/Sudoku">
+                  <svg class="fa-github">
+                    <use xlink:href="#fa-github"></use>
+                  </svg>
+                </a>
+              </h2>
+              <p>Questions, Comments, or Concerns?</p>
+              <p>Best,<br> <a href="https://github.com/chazhchang">@chazhchang</a><br><a href="https://github.com/randellricasata">@randellricasata</a><br><a href="https://github.com/nelson797">@nelson797</a><br><a href="https://github.com/HappyHackingOrange">@HappyHackingOrange</a>.</p>
+            </div>
+            <!-- .end .content-right -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
